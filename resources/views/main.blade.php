@@ -60,18 +60,19 @@
                 <li>
                     <a href="{{ url('makul') }}">Mata Kuliah</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="{{ url('#') }}">Logout</a>
-                </li>
-                <!-- <form method="POST" action="{{ route('logout') }}" class="btn btn-outline-light">
-                            @csrf
+                </li> -->
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
 
-                            <x-dropdown-link :href="route('logout')"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                {{ __('Log Out') }}
-                            </x-dropdown-link>
-                        </form> -->
+                    <li> 
+                        <a href="route('logout')"
+                            onclick="event.preventDefault();
+                                        this.closest('form').submit();">
+                        {{ __('Log Out') }}
+                    </li>
+                </form>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -92,12 +93,10 @@
         
         <!-- /#page-content-wrapper -->
         
- <div class="content-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-
-      <!-- Icon Cards-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-2 mt-4">
+        <div class="col-sm-12 mb-4">
+    <div class="card-group">
+    <div class="card-body">
+        <div class="col-md-4">
             <div class="inforide">
               <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-4 rideone">
@@ -110,8 +109,9 @@
               </div>
             </div>
         </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-2 mt-4">
+        </div>
+    <div class="card-body">
+        <div class="col-md-4">
             <div class="inforide">
               <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-4 ridetwo">
@@ -124,8 +124,9 @@
               </div>
             </div>
         </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-2 mt-4">
+    </div>
+    <div class="card-body">
+        <div class="col-md-4">
             <div class="inforide">
               <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-4 ridethree">
@@ -138,11 +139,8 @@
               </div>
             </div>
         </div>
-
     </div>
-  </div>
-</div>
-       
+    </div>
     </div>
     <!-- /#wrapper -->
 

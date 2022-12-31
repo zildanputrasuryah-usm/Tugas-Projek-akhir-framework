@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('Makul');
             $table->string('Dosen');
-            $table->integer('SKS');
+            $table->string('SKS');
             $table->string('Hari');
             $table->string('Ruang');
         });

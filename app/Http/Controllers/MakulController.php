@@ -48,7 +48,7 @@ class MakulController extends Controller
     }
     public function delete()
     {
-        DB::table('makul')->delete();
+    DB::table('makul')->delete();
         return redirect('makul')->with('status', 'Data Berhasil Dihapus!');
     }
 

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('dosen', function (Blueprint $table) {
             $table->id('id');
-            $table->integer('NIDN',11);
+            $table->string('NIDN',11);
             $table->string('Nama',150);
             $table->string('Pendidikan',150);
             $table->string('Makul',150);
